@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pfeshoping</string>
+    <string name="hint" > hint </string>
+    <string name="btnOk" > Upload </string>
+    <string name="labelName" >Name:</string>
+    <string name="labelDesignation" >Designation:</string>
+    <string name="labelPrix" >Prix:</string>
+    <string name="labelCategorie" >Categorie:</string>
+    <string name="labelImage" >Image:</string>
+    <string name="imageContentDescription">Image De Produit</string>
+    <string name="prixHint" >0</string>
+</resources>

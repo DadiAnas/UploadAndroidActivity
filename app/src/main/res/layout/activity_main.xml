@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fieldDesignation"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="272dp"
+        android:hint="@string/labelDesignation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fieldName"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="204dp"
+        android:hint="@string/labelName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fieldCategorie"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="340dp"
+        android:hint="@string/labelCategorie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="584dp"
+        android:text="@string/btnOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="212dp"
+        android:text="@string/labelName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fieldName"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/labelDesignation"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fieldDesignation"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="352dp"
+        android:text="@string/labelCategorie"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fieldCategorie"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPrix"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="436dp"
+        android:text="@string/labelPrix"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fieldCategorie"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelImage"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="508dp"
+        android:text="@string/labelImage"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fieldCategorie"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="292dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imageContentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <EditText
+        android:id="@+id/fieldPrix"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="424dp"
+        android:autofillHints="@string/prixHint"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="401dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="223dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="496dp"
+        android:contentDescription="@string/imageContentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

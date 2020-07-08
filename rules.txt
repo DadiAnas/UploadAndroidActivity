@@ -1,0 +1,20 @@
+Databse:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}
+
+Storage:
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+    allow read, write;
+    }
+  }
+}
